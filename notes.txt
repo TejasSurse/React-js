@@ -1,0 +1,185 @@
+3.33
+
+
+React 
+js library for creating UI 
+
+react.dev this is website 
+
+// it is created by facebook 
+// it is very huge libarary
+// we are only learning essential things 
+
+component - individual pieces of code (any thing)
+and this component is reusable thing 
+
+component ------ like function (reusable piece of code )
+
+Ex . we make card component 
+then whenever we want to use it we use same card 
+-- and this resuing is called render 
+
+// i.e all code in react is component 
+
+herirchy in component 
+components in component 
+
+video - description - like button 
+  main         sub              sub sub
+
+component is as small as button and as large as entire page 
+component has its own html css and js i.e ui and logic also
+
+react ke andar jo bhi code hum likhte he vo JSX form me hota hai 
+special syntax = JSX
+this jsx is way of writing html inside js code 
+
+
+
+------------------------------------------------------
+
+JSX = javascript Extension Syntax 
+it lets us write HTML directly inside js 
+
+JSX is not real javascript
+but when code written in jsx file it internally converts in to javascript
+
+To convert jsx in js internally it uses *Bable*
+jsx complie (bable )  js
+
+then final rendering kam is uses by this converted js 
+
+-------------------------------------------------------------
+
+React Setup
+ To set up local environment 
+
+Create-React-App   v/s   Vite // Tools to set local environment
+
+Create-React-App = old used most 
+
+vite = 2020 new latest and much faster fb recommend 
+
+vitejs.dev = / getstarted - 
+https://vitejs.dev/guide/
+
+set up 
+npm create vite@latest
+vite is not frontend specific 
+we are using React 
+and variant 
+javascript
+
+npm run dev -- command to start server 
+
+basic flow of react 
+how it work 
+
+Understanding react App
+
+Floder Structure 
+node modulet = dependencies 
+
+public folder = img
+
+src is main
+we write our main  logic in src folder
+assets - nothing
+app.css
+app.jsx - app is component 
+        - home page is app component 
+        - js and html is in app.jsx
+        and css is in app.css 
+        i.e 
+        ex. 
+        one app component 
+        --- its js and html written in jsx
+        and css is written in css and it is for single app component 
+
+index.css
+main.jsx
+
+
+
+index.html - main file 
+           - DIV ROOT 
+              CONTIAN  main app code 
+
+
+flow 
+index.html 
+---- ROOT
+----- main.jsx
+
+main.jsx -> takes component form app.jsx
+and add to root div 
+
+whenever we write code we write in app.jsx
+
+rewrite our app 
+
+
+import './App.css'
+
+function App() {
+   return <button>Heello World </button>
+}
+
+export default App
+
+
+Our 1st Component :
+Component is a reusable and Independent piece of code.
+
+creating a component 
+function Title(){
+  return (
+    <h1> Hello World </h1>
+  )
+}
+
+// rendering a component 
+<Title> </Title> --  <Title/> 
+
+This return alwasy return single element 
+only final parent element 
+
+after creating componet 
+render component
+
+render two types 
+writing like html tags 
+<Title> </Title>
+
+rendering inside app
+
+import './App.css'
+
+function Title(){
+  return <h1>this is title of the page </h1>;
+}
+
+
+function App() {
+   return <Title/>;
+
+}
+
+
+
+export default App
+
+we can send div single parent and add other elements in div 
+ex 
+return {
+  <div>
+    <Title/>
+  </div>
+}
+----------------------------------
+We write each component in seperate file 
+for title 
+title.jsx
+description - description.jsx
+
+and import the file in another file 
