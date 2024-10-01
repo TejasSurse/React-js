@@ -1,5 +1,5 @@
 function handleFormSubmt(event){
-    event.preventDefault();
+    event.preventDefault();// if we dont write it console get cleared automatically 
     console.log("form Was Submitted");
 }
 
