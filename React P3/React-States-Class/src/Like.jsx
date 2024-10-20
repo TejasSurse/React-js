@@ -3,6 +3,7 @@ import { useState } from "react";
 function Like(){
     const [likes, setLikes] = useState(false);
     const [count, setCount] = useState(1);
+    console.log("Like count ",  count);
 
     let toogleLike = ()=>{
         setLikes(!likes);
@@ -11,7 +12,7 @@ function Like(){
         }
        
     };
-
+    console.log("Like Couunt ");
     let likeStyle = {color : "red", fontSize : "2rem"};
     return(
         <div>
@@ -23,6 +24,7 @@ function Like(){
             </p>
         </div>
     );
+
 }
 
 export default  Like;
