@@ -1,0 +1,27 @@
+ToDO app
+-- Designing the store 
+
+action 
+Add a todo, mark as Done, Delete A todo
+{
+    type : "ADD_TODO",  // Compulsary 
+    payload : "write code",
+}
+
+Structure
+
+-- todos [ {}, {}, {},...];
+-- todo {
+        id, 
+        task,
+        isDone - false by default
+        }
+
+
+Creating A reducer 
+------------------
+Redux toolkit automatically generates action creators (fnxs that create action objects )
+
+(state, action) => {
+    // updates states
+}
